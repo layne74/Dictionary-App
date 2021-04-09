@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <form>
+    <input
+      placeholder="Enter a word"
+      required={true}
+      value="gold"
+    />
+    <br />
+    <button
+      type="submit"
+    >
+      Search
+    </button>
+  </form>
+  <div>
+    <h3>
+      Definition:
+    </h3>
+    <p>
+      Some Definition
+    </p>
+    <h3>
+      Example:
+    </h3>
+    <p>
+      Some Example
+    </p>
+  </div>
+</div>
+`;
