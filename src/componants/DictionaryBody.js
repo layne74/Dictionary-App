@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function DictionaryBody( props ) {
   // Props deconstruction
-  const {word, realWord, definition, example, clickFunc, changeFunc} = props;
+  const {word, realWord, definition, example, clickFunc, changeFunc, tempWord} = props;
 
   // Based off the props, either a result, prompt or error will be returned
   function toReturn(){
@@ -26,7 +26,7 @@ export default function DictionaryBody( props ) {
       // If the word has not been found a error is displayed
       } else {
           // Creates a link so the user can quickly google what they are looking for
-          let googleLink = "https://www.google.co.za/search?q=" + word
+          const googleLink = "https://www.google.co.za/search?q=" + tempWord + " definition"
           return (
             <div>
               <h3>Hmm... I cant seem to find that word. Try <a href={googleLink} target="blank">google</a> it.</h3>

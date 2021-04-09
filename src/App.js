@@ -13,6 +13,7 @@ export default class App extends Component {
     // States
     this.state = {
       word: "",
+      tempWord: "",
       definition: null,
       example: null,
       realWord: true
@@ -73,7 +74,8 @@ export default class App extends Component {
       // If there is a error fetching data, realWord state is set to false (This shows the " Word not found message ")
       .catch(() => {
         this.setState({
-          realWord: false
+          realWord: false,
+          tempWord: this.state.word
         })
       })
     }
@@ -82,6 +84,7 @@ export default class App extends Component {
 
   render() {
     return(
+      {/* App body */}
       <div>
         <div className="App">
           <div className="inner">
@@ -93,9 +96,11 @@ export default class App extends Component {
               example={this.state.example}
               clickFunc={this.onClickHandler}
               changeFunc={this.onChangeHandler}
+              tempWord={this.state.tempWord}
             />
           </div>
         </div>
+        {/* Credit stuff */}
         <div className="credits">
           <p>Created by: <a href="https://github.com/layne74" target="blank">Layne Hutchings</a></p>
           <p>Powered by: <a href="https://dictionaryapi.dev/" target="blank">https://dictionaryapi.dev/</a></p>
