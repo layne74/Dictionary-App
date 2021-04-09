@@ -16,6 +16,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.
 You will also see any lint errors in the console.
 
+## Play from Heroku
+Play Now - https://serene-spire-85547.herokuapp.com/
+
 ## How to use
 
 Just type in the word you want to find a definition for, if the word is available you will be shown a definition and a example ( if a example is available ) if the word is not available, a prebuilt google link will take you to a search page using the word you entered.
