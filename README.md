@@ -17,7 +17,7 @@ The page will reload if you make edits.
 You will also see any lint errors in the console.
 
 ## Play from Heroku
-Play Now - https://serene-spire-85547.herokuapp.com/
+Play Now - https://react-dictionary-by-layneh.herokuapp.com/
 
 ## How to use
 
