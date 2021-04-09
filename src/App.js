@@ -84,7 +84,7 @@ export default class App extends Component {
 
   render() {
     return(
-      {/* App body */}
+      // App body
       <div>
         <div className="App">
           <div className="inner">
