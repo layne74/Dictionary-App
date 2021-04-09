@@ -1,3 +1,0 @@
-www.dictionaryapi.com
-
-fetch('https://www.dictionaryapi.com/api/v3/references/collegiate/json/'+word+'?key=1e96355c-31b6-4dc6-a2f7-75dd49ad898f') .then(res => res.json())
